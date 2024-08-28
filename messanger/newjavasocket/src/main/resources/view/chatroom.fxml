@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: turquoise;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Chatroom">
+   <children>
+      <TextField fx:id="text" layoutX="14.0" layoutY="359.0" prefHeight="26.0" prefWidth="402.0" promptText="text" />
+      <Button fx:id="send" layoutX="436.0" layoutY="359.0" mnemonicParsing="false" onAction="#send" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: green;" text="send" textFill="WHITE" />
+      <Button fx:id="exit" layoutX="535.0" layoutY="359.0" mnemonicParsing="false" onAction="#setExit" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: red;" text="exit" textFill="WHITE" />
+      <TextArea fx:id="chats" editable="false" layoutX="173.0" layoutY="54.0" prefHeight="292.0" prefWidth="410.0" />
+      <Label fx:id="name" layoutX="14.0" layoutY="20.0" prefHeight="18.0" prefWidth="230.0" />
+      <ListView fx:id="listView" layoutX="14.0" layoutY="56.0" prefHeight="292.0" prefWidth="147.0" />
+      <Label fx:id="chatWith" layoutX="173.0" layoutY="21.0" prefHeight="18.0" prefWidth="305.0" />
+      <Hyperlink fx:id="delete" layoutX="496.0" layoutY="19.0" onAction="#setDelete" prefHeight="24.0" prefWidth="82.0" text="delete history" textFill="RED" visible="false" />
+      <Button fx:id="ping" layoutX="485.0" layoutY="359.0" mnemonicParsing="false" onAction="#setPing" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: yellow;" text="ping" />
+   </children>
+</AnchorPane>
